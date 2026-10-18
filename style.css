@@ -141,9 +141,20 @@ body {
 
 .contact { text-align: center; padding: 50px 28px; }
 .contact p { color: var(--muted); margin-bottom: 22px; }
-.socials { display: flex; justify-content: center; gap: 24px; margin-top: 26px; flex-wrap: wrap; }
-.socials a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
-.socials a:hover { color: var(--accent2); }
+.contact .btn { display: inline-flex; align-items: center; gap: 10px; word-break: break-all; }
+.socials { display: flex; justify-content: center; gap: 14px; margin-top: 26px; flex-wrap: wrap; }
+.socials a {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 10px 20px; border-radius: 999px;
+  color: var(--muted); text-decoration: none; font-size: 0.95rem;
+  background: var(--glass); border: 1px solid var(--border);
+  transition: color 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.socials a:hover { transform: translateY(-3px); color: var(--accent2); border-color: currentColor; }
+.socials a.wa:hover { color: #25d366; box-shadow: 0 8px 24px rgba(37, 211, 102, 0.25); }
+.socials a.ig:hover { color: #ff5c8a; box-shadow: 0 8px 24px rgba(255, 92, 138, 0.25); }
+.socials a.gh:hover { color: #ffffff; box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15); }
+.socials svg { flex-shrink: 0; }
 
 .footer { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 70px 20px 30px; }
 
