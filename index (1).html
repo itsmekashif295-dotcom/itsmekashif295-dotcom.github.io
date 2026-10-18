@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kashif Rehman | Portfolio</title>
+  <meta name="description" content="Portfolio of Kashif Rehman, CIT student at GCT Attock. Web development, app development and graphic design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 3D background canvas -->
+  <canvas id="bg"></canvas>
+
+  <!-- Loader -->
+  <div id="loader"><div class="loader-ring"></div><p>Loading experience...</p></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#home" class="logo">KR<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Kashif Rehman</h1>
+        <h2 class="typing"><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="lead">
+          Third-year CIT student at Government College of Technology (GCT) Attock,
+          building websites, apps and designs.
+        </p>
+        <div class="cta">
+          <a href="#projects" class="btn primary">View my work</a>
+          <a href="#contact" class="btn ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="scroll-hint">Scroll<span></span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h3 class="section-title"><span>01</span> About me</h3>
+      <div class="glass about-grid">
+        <div>
+          <p>
+            I'm Kashif Rehman, a Computer Information Technology (CIT) student in my
+            third year at GCT Attock. I enjoy turning ideas into real products, from
+            the code behind them to the way they look.
+          </p>
+          <p>
+            I work across web development, app development and graphic design, and my
+            featured project is AiCodeGaurd.
+          </p>
+        </div>
+        <ul class="facts">
+          <li><b>Education</b> Computer Information Technology (CIT), GCT Attock</li>
+          <li><b>Year</b> 3rd Year</li>
+          <li><b>Focus</b> Web development, app development, graphic design</li>
+          <li><b>Featured project</b> AiCodeGaurd</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h3 class="section-title"><span>02</span> Skills</h3>
+      <div class="skills-grid">
+        <div class="glass skill"><h4>Web Development</h4><p>Building responsive, modern websites that work on every screen.</p></div>
+        <div class="glass skill"><h4>App Development</h4><p>Creating apps that solve real problems and are easy to use.</p></div>
+        <div class="glass skill"><h4>Graphic Design</h4><p>Visual identities, posters and layouts with a clean, creative look.</p></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h3 class="section-title"><span>03</span> Projects</h3>
+      <div class="projects-grid">
+        <article class="glass project tilt">
+          <div class="thumb" style="--a:#7c5cff;--b:#00d4ff"></div>
+          <h4>AiCodeGaurd</h4>
+          <p>An app that finds vulnerabilities in AI-generated code. Currently in development.</p>
+          <div class="tags"><span>In development</span><span>Security</span><span>AI</span></div>
+          <div class="links"><a href="https://github.com/itsmekashif295-dotcom" target="_blank" rel="noopener">GitHub</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h3 class="section-title"><span>04</span> Contact</h3>
+      <div class="glass contact">
+        <p>Want to work together or just say hi? My inbox is open.</p>
+        <a class="btn primary" href="mailto:itsme.kashif295@gmail.com">itsme.kashif295@gmail.com</a>
+        <div class="socials">
+          <a href="https://instagram.com/kash.if069" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://wa.me/923125791683" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://github.com/itsmekashif295-dotcom" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Kashif Rehman · Built with Three.js</footer>
+
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
